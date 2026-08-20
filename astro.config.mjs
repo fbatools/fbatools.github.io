@@ -17,16 +17,7 @@ function autoDatePlugin() {
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
-	redirects: {
-		'/go/helium10-diamond-annual': 'https://i.helium10.com/c/2597501/3856883/37271',
-		'/go/helium10-platinum-annual': 'https://i.helium10.com/c/2597501/3275421/37271',
-		'/go/helium10-diamond-6mo': 'https://i.helium10.com/c/2597501/3743709/37271',
-		'/go/helium10-platinum-6mo': 'https://i.helium10.com/c/2597501/3743709/37271',
-		'/go/helium10-lifetime': 'https://i.helium10.com/c/2597501/3743709/37271',
-		'/go/smartscout': 'https://smartscout.com/?fpr=prosun',
-		'/go/amzscout': 'https://amzscout.idevaffiliate.com/idevaffiliate.php?id=2435'
-	},
+	site: 'https://fbatools.github.io',
 	markdown: {
 		remarkPlugins: [autoDatePlugin],
 	},

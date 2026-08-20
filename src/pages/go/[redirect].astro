@@ -1,0 +1,35 @@
+---
+export function getStaticPaths() {
+  const redirects = {
+    'helium10-diamond-annual': 'https://i.helium10.com/c/2597501/3856883/37271',
+    'helium10-platinum-annual': 'https://i.helium10.com/c/2597501/3275421/37271',
+    'helium10-diamond-6mo': 'https://i.helium10.com/c/2597501/3743709/37271',
+    'helium10-platinum-6mo': 'https://i.helium10.com/c/2597501/3743709/37271',
+    'helium10-lifetime': 'https://i.helium10.com/c/2597501/3743709/37271',
+    'smartscout': 'https://smartscout.com/?fpr=prosun',
+    'amzscout': 'https://amzscout.idevaffiliate.com/idevaffiliate.php?id=2435'
+  };
+
+  return Object.entries(redirects).map(([key, url]) => ({
+    params: { redirect: key },
+    props: { url },
+  }));
+}
+
+const { url } = Astro.props;
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content={`0;url=${url}`} />
+    <meta name="robots" content="noindex, nofollow" />
+    <script is:inline define:vars={{ url }}>
+      // This forces the browser to redirect immediately before rendering the page!
+      window.location.replace(url);
+    </script>
+  </head>
+  <body style="background: #111; color: #fff; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <p>Redirecting to our partner... If you are not redirected automatically, <a href={url} style="color: #ff9900;">click here</a>.</p>
+  </body>
+</html>
