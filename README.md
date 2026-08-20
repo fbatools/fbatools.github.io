@@ -1,63 +1,35 @@
-# Astro Starter Kit: Blog
+# 📦 FBA Tool Reviews 
 
-```sh
-npm create astro@latest -- --template blog
-```
+**Live Site:** [https://fbatools.github.io](https://fbatools.github.io)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Welcome to the official repository for **FBA Tool Reviews**, a blazing-fast, SEO-optimized platform dedicated to helping Amazon sellers find the absolute best software stack to scale their e-commerce businesses.
 
-Features:
+## 🚀 About The Project
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Finding the right tools for Amazon FBA product research, keyword tracking, and wholesale sourcing can be overwhelming. We spend thousands of hours reverse-engineering industry-leading software to provide you with data-driven reviews, comprehensive tutorials, and exclusive discount codes.
 
-## 🚀 Project Structure
+**We actively cover and review:**
+*   **Helium 10** (Cerebro, Magnet, Black Box, Xray)
+*   **SmartScout** (Wholesale sourcing and brand analytics)
+*   **AMZScout** (Budget-friendly product research)
+*   *And much more!*
 
-Inside of your Astro project, you'll see the following folders and files:
+## 💰 Exclusive Discount Codes
 
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+We secure the best discounts on the internet for our readers. Visit the [live site](https://fbatools.github.io) to redeem them, or use the codes below at checkout:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+*   **Helium 10 Diamond:** `GEO35DUSA` (35% OFF)
+*   **Helium 10 Platinum:** `GEO35PUSA` (35% OFF)
+*   **SmartScout:** `PROSUN` (25% OFF)
+*   **AMZScout:** `PROSUN10` ($50 OFF)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🛠️ Technical Stack
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+This project is built for maximum speed and Core Web Vitals performance:
+*   **Framework:** [Astro](https://astro.build/) (Zero-JS frontend architecture)
+*   **Content:** Markdown & MDX
+*   **Deployment:** GitHub Actions & GitHub Pages
+*   **SEO:** Fully optimized with canonical URLs, Open Graph tags, automated sitemaps, AI `llms.txt` formatting, and dynamic timestamps.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+---
+*Built with ❤️ for the Amazon FBA Community.*
