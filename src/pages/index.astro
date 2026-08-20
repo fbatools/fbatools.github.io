@@ -12,7 +12,7 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -143,8 +143,8 @@ const posts = (await getCollection('blog')).sort(
 								<div class="placeholder-img">Image Coming Soon</div>
 							)}
 							<div class="card-overlay">
-								<div class="overlay-title">{post.data.title}</div>
-								<div class="overlay-text">{post.data.description}</div>
+								<div class="overlay-title">{post.data.title.replace(/2026/g, new Date().getFullYear().toString())}</div>
+								<div class="overlay-text">{post.data.description.replace(/2026/g, new Date().getFullYear().toString())}</div>
 								<span class="btn">Read Article</span>
 							</div>
 						</a>

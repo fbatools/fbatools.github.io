@@ -3,6 +3,17 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import { visit } from 'unist-util-visit';
+
+function autoDatePlugin() {
+  return (tree) => {
+    const currentYear = new Date().getFullYear().toString();
+    visit(tree, 'text', (node) => {
+      // Replace hardcoded 2026 with the current year so content always stays fresh
+      node.value = node.value.replace(/2026/g, currentYear);
+    });
+  };
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +26,9 @@ export default defineConfig({
 		'/go/helium10-lifetime': 'https://i.helium10.com/c/2597501/3743709/37271',
 		'/go/smartscout': 'https://smartscout.com/?fpr=prosun',
 		'/go/amzscout': 'https://amzscout.idevaffiliate.com/idevaffiliate.php?id=2435'
+	},
+	markdown: {
+		remarkPlugins: [autoDatePlugin],
 	},
 	integrations: [mdx(), sitemap()],
 	fonts: [
