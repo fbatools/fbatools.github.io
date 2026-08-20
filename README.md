@@ -18,8 +18,8 @@ Finding the right tools for Amazon FBA product research, keyword tracking, and w
 
 We secure the best discounts on the internet for our readers. Visit the [live site](https://fbatools.github.io) to redeem them, or use the codes below at checkout:
 
-*   **Helium 10 Diamond:** `GEO35DUSA` (35% OFF)
-*   **Helium 10 Platinum:** `GEO35PUSA` (35% OFF)
+*   **Helium 10 Diamond:** `GEO35DUSA` (35% OFF Annual Plans)
+*   **Helium 10 Platinum:** `GEO35PUSA` (35% OFF Annual Plans)
 *   **SmartScout:** `PROSUN` (25% OFF)
 *   **AMZScout:** `PROSUN10` ($50 OFF)
 
